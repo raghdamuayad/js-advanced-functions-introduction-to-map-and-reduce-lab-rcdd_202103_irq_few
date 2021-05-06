@@ -22,23 +22,23 @@ function reduceToTotal(sourceArray, startingPoint = 0){
 
 function reduceToAllTrue(sourceArray){
 
-    const reducer = function(accumulator, currentValue){
-        if(!!accumulator == true && !!currentValue == true){
-            return true;
-        } else {
-            return false;
-        }
+const reducer = function(accumulator, currentValue){
+  if(!!accumulator == true && !!currentValue == true){
+  return true;
+  } else {
+  return false;
     }
-    return sourceArray.reduce(reducer, true)
+    }
+  return sourceArray.reduce(reducer, true)
 }
 
 function reduceToAnyTrue(sourceArray){
-    const reducer = function(accumulator, currentValue){
-        if(accumulator == true){
-            return true
-        } else {
-            return !!currentValue
-        }
+  const reducer = function(accumulator, currentValue){
+  if(accumulator == true){
+  return true
+  } else {
+    return !!currentValue
+    }
     }
     return sourceArray.reduce(reducer, false)
-}
+     }
