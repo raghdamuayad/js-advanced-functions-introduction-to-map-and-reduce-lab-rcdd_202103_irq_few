@@ -41,3 +41,4 @@ function reduceToAnyTrue(sourceArray){
         }
     }
     return sourceArray.reduce(reducer, false)
+}
